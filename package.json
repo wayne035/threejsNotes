@@ -9,9 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.86.3",
+    "@react-three/fiber": "^8.14.4",
+    "@types/three": "^0.156.0",
+    "leva": "^0.9.35",
+    "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "13.5.4"
+    "three": "^0.157.0"
   },
   "devDependencies": {
     "autoprefixer": "^10",
