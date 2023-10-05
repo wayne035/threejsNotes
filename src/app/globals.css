@@ -13,4 +13,7 @@ body{background: #000;}
   .apply-btn {
     @apply border-2 text-[#fff] border-[#fff] rounded-lg p-3 m-5 text-[20px] hover:bg-[#fff] hover:text-[#000] font-bold w-[150px] text-center hover:border-[#999];
   }
+  .apply-code {
+    @apply absolute bottom-0 text-[#0f0] m-2 leading-8 border-2 p-3 rounded-md bg-[#000] border-[#fff];
+  }
 }

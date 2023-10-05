@@ -9,6 +9,9 @@ export default function Home() {
         <Link href='/camera' className='apply-btn'>
           相機&物體設置
         </Link>
+        <Link href='/useFrame' className='apply-btn'>
+          useFrame(動畫設置)
+        </Link>
       </nav>
     </>
   )
