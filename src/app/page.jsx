@@ -23,6 +23,9 @@ export default function Home() {
         <Link href='/event' className='apply-link'>
           物體事件設置
         </Link>
+        <Link href='/environment' className='apply-link'>
+          背景環境設置
+        </Link>
       </nav>
     </>
   )
