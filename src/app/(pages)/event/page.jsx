@@ -15,10 +15,12 @@ export default function Event() {
               onPointerEnter={()=> setHover(true)}
               onPointerOut={()=> setHover(false)}
               scale={click ? 3 : 1 }
+              position={[1,0,0]}
         >
           <boxGeometry />
           <meshBasicMaterial color={hover ? '#0f0' : '#fff'}/>
         </mesh>
+        <gridHelper/>
     </Canvas>
     <Link href='/' className='apply-btn absolute top-0'>
         回首頁

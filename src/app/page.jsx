@@ -20,8 +20,11 @@ export default function Home() {
         <Link href='/geometries' className='apply-link'>
           常用的幾何體
         </Link>
+        <Link href='/lights' className='apply-link'>
+          常用燈光設置
+        </Link>
         <Link href='/camera' className='apply-link'>
-          相機&幾何體設置
+          相機&幾何體位置設置
         </Link>
         <Link href='/useFrame' className='apply-link'>
           動畫設置
