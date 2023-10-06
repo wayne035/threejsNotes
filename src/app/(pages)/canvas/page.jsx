@@ -35,7 +35,7 @@ export default function Useframe() {
           {'import { Canvas } from "@react-three/fiber"'}<br/>
           {'import { OrbitControls } from "@react-three/drei"'}<br/>
           {'<Canvas camera={{ position: [2, 3, 6] }}>'}<br/>
-          &emsp;&emsp;{'<OrbitControls/>'}<br/>
+          &emsp;&emsp;{'<OrbitControls/> //軌道控制器'}<br/>
           &emsp;&emsp;{"<gridHelper args={[size , N , centerLine , line]}/>"}<br/>
           &emsp;&emsp;{"<axesHelper args={[size]} />"}<br/>
           &emsp;&emsp;{'<mesh>'}<br/>

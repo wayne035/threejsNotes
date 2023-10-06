@@ -28,9 +28,9 @@ export default function Event() {
       <code>
         {"const [hover,setHover] = useState(false)"}<br/>
         {"const [click,setClick] = useState(false)"}<br/>
-        {"<mesh onClick={()=>setClick(state=>!state)}"}<br/>
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{"onPointerEnter={()=> setHover(true)}"}<br/>
-        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{"onPointerOut={()=> setHover(false)}"}<br/>
+        {"<mesh onClick={()=> setClick(state=>!state) }"}<br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{"onPointerEnter={()=> setHover(true) }"}<br/>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{"onPointerOut={()=> setHover(false) }"}<br/>
         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{"scale={click ? 3 : 1 }"}<br/>
         &emsp;&emsp;{"<boxGeometry />"}<br/>
         &emsp;&emsp;{"<meshBasicMaterial color={hover ? '#0f0' : '#fff'}/>"}<br/>
