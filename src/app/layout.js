@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Three.js 筆記',
-  description: '紀錄 Three.js 相關知識',
+  title: 'React Three.js 筆記',
+  description: '紀錄 React Three.js 相關知識',
 }
 
 export default function RootLayout({ children }) {

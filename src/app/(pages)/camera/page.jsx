@@ -51,7 +51,7 @@ export default function Camera(){
              {'<PerspectiveCamera position={[X , Y , Z]} rotation={rX , rY , rZ]}>'}<br/>
              &emsp;&emsp;{'<mesh position={[X , Y , Z]}> rotation={[rX , rY , rZ]}>'}<br/>
              &emsp;&emsp;&emsp;&emsp;{'<boxGeometry />'}<br/>
-             &emsp;&emsp;&emsp;&emsp;{'<meshBasicMaterial color="#cc00cc" />'}<br/>
+             &emsp;&emsp;&emsp;&emsp;{'<meshBasicMaterial color="color" />'}<br/>
              &emsp;&emsp;{'</mesh>'}<br/>
              {'</PerspectiveCamera>'}
            </code>

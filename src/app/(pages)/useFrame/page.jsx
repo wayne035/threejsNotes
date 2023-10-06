@@ -76,7 +76,7 @@ export default function Useframe() {
           &emsp;&emsp;{'...'}<br/>
           &emsp;{'})'}<br/>
           {'}'}<br/>
-          {'return <Animation/>'}
+          {'return <Animation/> //放置Canvas裡'}
         </code>
       </div>
     </div>
