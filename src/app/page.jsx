@@ -11,6 +11,9 @@ export default function Home() {
         <Link href='/canvas' className='apply-link'>
           場景設置
         </Link>
+        <Link href='/grid' className='apply-link'>
+          網格幫手設置
+        </Link>
         <Link href='/orbitControls' className='apply-link'>
           軌道控制器設置
         </Link>
