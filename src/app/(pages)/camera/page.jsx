@@ -21,7 +21,6 @@ export default function Camera(){
 
     const camera = useControls('透視相機(PerspectiveCamera)',value())
     const obj = useControls('正方體位置',value())
-    const color = useControls('color',{ color:'#cc00cc'})
 
     return(
       <div className='h-[100vh]'>
@@ -37,7 +36,6 @@ export default function Camera(){
                   rotation={[obj.rX, obj.rY, obj.rZ]}
             >
               <boxGeometry />
-              <meshBasicMaterial color={color.color}/>
             </mesh>
           </PerspectiveCamera>
         </Canvas>
@@ -47,11 +45,11 @@ export default function Camera(){
         <div className='apply-code'>
            <p className='text-[24px]'>code :</p>
            <code>
-             {'import { PerspectiveCamera } from "@react-three/drei"'}<br></br>
+             {'import { PerspectiveCamera } from "@react-three/drei"'}<br/>
+             {'...'}<br/>
              {'<PerspectiveCamera position={[X , Y , Z]} rotation={rX , rY , rZ]}>'}<br/>
              &emsp;&emsp;{'<mesh position={[X , Y , Z]}> rotation={[rX , rY , rZ]}>'}<br/>
              &emsp;&emsp;&emsp;&emsp;{'<boxGeometry />'}<br/>
-             &emsp;&emsp;&emsp;&emsp;{'<meshBasicMaterial color="color" />'}<br/>
              &emsp;&emsp;{'</mesh>'}<br/>
              {'</PerspectiveCamera>'}
            </code>

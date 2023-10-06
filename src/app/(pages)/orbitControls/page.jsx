@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei"
 import { useControls } from "leva"
 
-export default function Useframe() {
+export default function OrbitControl() {
   const o = useControls('軌道控制器(OrbitControls)',{
     Pan:{value:true},
     Rotate:{value:true},

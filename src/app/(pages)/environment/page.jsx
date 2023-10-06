@@ -4,7 +4,7 @@ import { Canvas } from "@react-three/fiber"
 import { OrbitControls,Environment } from "@react-three/drei"
 import { useControls } from "leva"
 
-export default function Useframe() {
+export default function Environments() {
   const e = useControls('背景環境(Environment)',{
     BG:{
         options:["apartment","city","dawn","forest","lobby","night","park","studio","sunset","warehouse"]

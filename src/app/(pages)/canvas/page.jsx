@@ -10,7 +10,6 @@ export default function Canva() {
         <OrbitControls/>
           <mesh>
             <boxGeometry />
-            <meshBasicMaterial color='#fff'/>
           </mesh>
       </Canvas>
       <Link href='/' className='apply-btn absolute top-0'>
@@ -23,7 +22,6 @@ export default function Canva() {
           {'<Canvas camera={{ position: [2, 2, 6] }}>'}<br/>
           &emsp;&emsp;{'<mesh>'}<br/>
           &emsp;&emsp;&emsp;&emsp;{'<boxGeometry />'}<br/>
-          &emsp;&emsp;&emsp;&emsp;{"<meshBasicMaterial color='#fff'/>"}<br/>
           &emsp;&emsp;{'</mesh>'}<br/>
           {'</Canvas>'}
         </code>

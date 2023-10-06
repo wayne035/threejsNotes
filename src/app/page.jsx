@@ -17,14 +17,17 @@ export default function Home() {
         <Link href='/orbitControls' className='apply-link'>
           軌道控制器設置
         </Link>
+        <Link href='/geometries' className='apply-link'>
+          常用的幾何體
+        </Link>
         <Link href='/camera' className='apply-link'>
-          相機&物體設置
+          相機&幾何體設置
         </Link>
         <Link href='/useFrame' className='apply-link'>
           動畫設置
         </Link>
         <Link href='/event' className='apply-link'>
-          物體事件設置
+          常用的事件
         </Link>
         <Link href='/environment' className='apply-link'>
           背景環境設置
