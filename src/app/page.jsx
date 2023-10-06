@@ -17,6 +17,9 @@ export default function Home() {
         <Link href='/useFrame' className='apply-link'>
           動畫設置
         </Link>
+        <Link href='/event' className='apply-link'>
+          物體事件設置
+        </Link>
       </nav>
     </>
   )
