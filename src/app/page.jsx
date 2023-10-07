@@ -35,6 +35,9 @@ export default function Home() {
         <Link href='/environment' className='apply-link'>
           背景環境設置
         </Link>
+        <Link href='/useloader' className='apply-link'>
+          載入外部模型
+        </Link>
       </nav>
     </>
   )

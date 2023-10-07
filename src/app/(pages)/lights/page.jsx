@@ -3,7 +3,6 @@ import Link from "next/link"
 import { Canvas } from "@react-three/fiber"
 import { OrbitControls } from "@react-three/drei"
 import { useControls } from "leva"
-import { AxesHelper } from "three"
 
 export default function Lights(){
     const al = useControls('環境光(ambientLight)',{

@@ -70,9 +70,9 @@ export default function Useframe() {
           {'import { useFrame } from "@react-three/fiber"'}<br/>
           {'function Animation(){'}<br/>
           &emsp;{'useFrame(()=>{'}<br/>
-          &emsp;&emsp;{'mesh.current.rotation.x = rX'}<br/>
+          &emsp;&emsp;{'mesh.current.rotation.x += rX'}<br/>
           &emsp;&emsp;{'...'}<br/>
-          &emsp;&emsp;{'camera.current.rotation.x = rX'}<br/>
+          &emsp;&emsp;{'camera.current.rotation.x += rX'}<br/>
           &emsp;&emsp;{'...'}<br/>
           &emsp;{'})'}<br/>
           {'}'}<br/>
