@@ -60,10 +60,8 @@ export default function Lights(){
           <p className='text-[24px]'>code :</p>
           <code>
             {'<Canvas shadows >'}<br/>
-            {'...'}<br/>
-            &emsp;&emsp;{'<mesh receiveShadow >'}<br/>
-            &emsp;&emsp;&emsp;&emsp;{'<planeGeometry>'}<br/>
-            &emsp;&emsp;&emsp;&emsp;{"<meshStandardMaterial'/>"}<br/>
+            &emsp;&emsp;{'<mesh receiveShadow >'}
+            &emsp;&emsp;{'...'}
             &emsp;&emsp;{'</mesh>'}<br/>
             &emsp;&emsp;{'<{lights} args={[color, intensity]} position={[ x , y , z ]} '}<br/>
             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
