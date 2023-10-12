@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import { useBookToggle } from "../store/bookToggle";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-//import { useControls } from "leva";
+//import { useControls } from "leva"; 
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -20,6 +20,20 @@ export default function HomeModel({body}) {
   //   rY:{value:1.64,min:-2 * Math.PI,max:2 * Math.PI,step:0.005},
   //   rZ:{value:0,min:-2 * Math.PI,max:2 * Math.PI,step:0.005},
   // })
+  const Link = (e,value) =>{
+    e.stopPropagation()
+    switch(value){
+      case 'threejs':
+        return window.open('https://threejs.org/')
+      case 'drei':
+        return window.open('https://github.com/pmndrs/drei')
+      case 'fiber':
+        return window.open('https://docs.pmnd.rs/react-three-fiber/getting-started/introduction')
+      case 'react':
+        return window.open('https://react.dev/')
+    }
+  }
+
   useEffect(() => {
     const tl = gsap.timeline({
       scrollTrigger:{
@@ -147,19 +161,19 @@ export default function HomeModel({body}) {
               <mesh geometry={nodes.Rectangle_3.geometry} material={materials.frame} position={[-1.61, 0, -17.53]} />
             </group>
             <group position={[-123.77, -389.79, -2177.81]}>
-              <group position={[-211.66, 81.99, 30.77]} scale={[0.87, 0.87, 1]} onClick={()=>console.log('threejs')}>
+              <group position={[-211.66, 81.99, 30.77]} scale={[0.87, 0.87, 1]} onClick={(e)=>Link(e,'threejs')}>
                 <mesh geometry={nodes.frame1.geometry} material={materials.frame} position={[0, 0, -17.53]} />
                 <mesh geometry={nodes.threejsscreen.geometry} material={materials.threeIMG} position={[0, 0, 2.98]} scale={0.94} />
               </group>
-              <group position={[137.73, 291.31, 30.77]} scale={[0.46, 0.47, 1]} onClick={()=>console.log('drei')}>
+              <group position={[137.73, 291.31, 30.77]} scale={[0.46, 0.47, 1]} onClick={(e)=>Link(e,'drei')}>
                 <mesh geometry={nodes.frame1001.geometry} material={materials.frame} position={[0, 0, -17.53]} />
                 <mesh geometry={nodes.dreiscreen.geometry} material={materials.dreiIMG} position={[0, 0, 2.98]} scale={0.94} />
               </group>
-              <group position={[208.08, -38.82, 21.23]} rotation={[0.14, 0.01, 0]} scale={[1.31, 1.17, 1.16]} onClick={()=>console.log('fiber')}>
+              <group position={[208.08, -38.82, 21.23]} rotation={[0.14, 0.01, 0]} scale={[1.31, 1.17, 1.16]} onClick={(e)=>Link(e,'fiber')}>
                 <mesh geometry={nodes.frame3.geometry} material={materials.frame} position={[0, 0, -0.36]} rotation={[-0.13, 0, 0]} />
                 <mesh geometry={nodes.screen3.geometry} material={materials.fiberIMG} position={[-0.56, -0.28, 12.36]} rotation={[-0.13, 0, -1.57]} />
               </group>
-              <group position={[-22.73, -326.09, 30.77]} scale={[0.81, 0.35, 1]} onClick={()=>console.log('react')}>
+              <group position={[-22.73, -326.09, 30.77]} scale={[0.81, 0.35, 1]} onClick={(e)=>Link(e,'react')}>
                 <mesh geometry={nodes.frame4.geometry} material={materials.frame} position={[0, 0, -17.53]} />
                 <mesh geometry={nodes.screen4.geometry} material={materials.reactIMG} position={[0, 0, 2.98]} scale={0.94} />
               </group>
