@@ -14,34 +14,34 @@ export default function Basic() {
         </span>
         <nav className="p-6 text-[20px] font-bold m-2">
           <h2 className='text-[24px] font-bold mb-3 cursor-default'>基本設置 : </h2>
-          <Link href='/canvas' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]">
+          <Link href='/canvas' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]" target="_black">
             場景設置
           </Link>
-          <Link href='/grid' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]">
+          <Link href='/grid' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]" target="_black">
             網格幫手設置
           </Link>
-          <Link href='/orbitControls' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]">
+          <Link href='/orbitControls' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]" target="_black">
             軌道控制器設置
           </Link>
-          <Link href='/geometries' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]">
+          <Link href='/geometries' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]" target="_black">
             常用的幾何體
           </Link>
-          <Link href='/camera' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]">
+          <Link href='/camera' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]" target="_black">
             相機&幾何體位置設置
           </Link>
-          <Link href='/lights' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]">
+          <Link href='/lights' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]" target="_black">
             常用燈光設置
           </Link>
-          <Link href='/useFrame' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]">
+          <Link href='/useFrame' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]" target="_black">
             動畫設置
           </Link>
-          <Link href='/event' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]">
+          <Link href='/event' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]" target="_black">
             常用的事件
           </Link>
-          <Link href='/environment' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]">
+          <Link href='/environment' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]" target="_black">
             背景環境設置
           </Link>
-          <Link href='/useloader' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]">
+          <Link href='/useloader' className="block hover:text-[#865eff] border-b-2 border-solid m-2 border-[#000]" target="_black">
             載入外部模型
           </Link>
         </nav>
