@@ -16,7 +16,7 @@ export default function Grid() {
   })
 
   return (
-    <div className='h-[100vh]'>
+    <div className='h-screen w-screen fixed'>
       <Canvas camera={{ position: [2, 2, 6] }}>
           <OrbitControls/>
           <gridHelper args={[g.size,g.NxN,g.centerLine,g.line]}/>

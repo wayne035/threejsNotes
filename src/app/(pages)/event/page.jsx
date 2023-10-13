@@ -8,7 +8,7 @@ export default function Event() {
   const [hover,setHover] = useState(false)
   const [click,setClick] = useState(false)
   return (
-    <div className='h-[100vh]'>
+    <div className='h-screen w-screen fixed'>
     <Canvas camera={{ position: [2, 2, 6] }}>
         <OrbitControls/>
         <mesh onClick={()=>setClick(state=>!state)}

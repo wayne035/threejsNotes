@@ -5,7 +5,7 @@ import React from "@/app/components/React"
 
 export default function Useloads() {
   return (
-    <div className='h-[100vh]'>
+    <div className='h-screen w-screen fixed'>
       <Canvas camera={{ position: [2, 2, 6] }}>
         <React/>
         <spotLight args={['#208ef5',1000]} position={[0,5,5]}/>

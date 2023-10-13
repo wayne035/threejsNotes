@@ -8,7 +8,7 @@ export default function Home() {
   const body = useRef(null)
   return (
     <>
-      <div ref={body} className=' fixed top-0 h-full w-full bg-[#000]'>
+      <div ref={body} className='fixed h-full w-full bg-[#000]'>
         <Canvas>        
           <ambientLight args={['#fff',2]}/>
           <HomeModel body={body}/>

@@ -1,6 +1,6 @@
 'use client'
 import { useGLTF,PerspectiveCamera } from "@react-three/drei";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef ,useState } from "react";
 import { useBookToggle } from "../store/bookToggle";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -11,6 +11,10 @@ gsap.registerPlugin(ScrollTrigger)
 export default function HomeModel({body}) {
   const { nodes, materials } = useGLTF('/models/home.glb')
   const camera = useRef()
+  const [moveThreeZ,setMoveThreeZ] = useState(false)
+  const [moveDreiZ,setMoveDreiZ] = useState(false)
+  const [moveFiberZ,setMoveFiberZ] = useState(false)
+  const [moveReactZ,setMoveReactZ] = useState(false)
   const {setToggle} = useBookToggle()
   // const c = useControls('camera',{
   //   x:{value:13,mix:-20,max:20,step:1},
@@ -161,19 +165,35 @@ export default function HomeModel({body}) {
               <mesh geometry={nodes.Rectangle_3.geometry} material={materials.frame} position={[-1.61, 0, -17.53]} />
             </group>
             <group position={[-123.77, -389.79, -2177.81]}>
-              <group position={[-211.66, 81.99, 30.77]} scale={[0.87, 0.87, 1]} onClick={(e)=>Link(e,'threejs')}>
+              <group position={[-211.66, 81.99, moveThreeZ ? 80 : 30.77]} scale={[0.87, 0.87, 1]} 
+                     onClick={(e)=>Link(e,'threejs')}
+                     onPointerEnter={(e)=>{e.stopPropagation(),setMoveThreeZ(v=>!v)}}
+                     onPointerOut={(e=>{e.stopPropagation(),setMoveThreeZ(v=>!v)})}
+              >
                 <mesh geometry={nodes.frame1.geometry} material={materials.frame} position={[0, 0, -17.53]} />
                 <mesh geometry={nodes.threejsscreen.geometry} material={materials.threeIMG} position={[0, 0, 2.98]} scale={0.94} />
               </group>
-              <group position={[137.73, 291.31, 30.77]} scale={[0.46, 0.47, 1]} onClick={(e)=>Link(e,'drei')}>
+              <group position={[137.73, 291.31, moveDreiZ ? 80 : 30.77]} scale={[0.46, 0.47, 1]} 
+                     onClick={(e)=>Link(e,'drei')}
+                     onPointerEnter={(e)=>{e.stopPropagation(),setMoveDreiZ(v=>!v)}}
+                     onPointerOut={(e=>{e.stopPropagation(),setMoveDreiZ(v=>!v)})}
+              >
                 <mesh geometry={nodes.frame1001.geometry} material={materials.frame} position={[0, 0, -17.53]} />
                 <mesh geometry={nodes.dreiscreen.geometry} material={materials.dreiIMG} position={[0, 0, 2.98]} scale={0.94} />
               </group>
-              <group position={[208.08, -38.82, 21.23]} rotation={[0.14, 0.01, 0]} scale={[1.31, 1.17, 1.16]} onClick={(e)=>Link(e,'fiber')}>
+              <group position={[208.08, -38.82,moveFiberZ ? 80 : 21.23]} rotation={[0.14, 0.01, 0]} scale={[1.31, 1.17, 1.16]} 
+                     onClick={(e)=>Link(e,'fiber')}
+                     onPointerEnter={(e)=>{e.stopPropagation(),setMoveFiberZ(v=>!v)}}
+                     onPointerOut={(e=>{e.stopPropagation(),setMoveFiberZ(v=>!v)})} 
+              >
                 <mesh geometry={nodes.frame3.geometry} material={materials.frame} position={[0, 0, -0.36]} rotation={[-0.13, 0, 0]} />
                 <mesh geometry={nodes.screen3.geometry} material={materials.fiberIMG} position={[-0.56, -0.28, 12.36]} rotation={[-0.13, 0, -1.57]} />
               </group>
-              <group position={[-22.73, -326.09, 30.77]} scale={[0.81, 0.35, 1]} onClick={(e)=>Link(e,'react')}>
+              <group position={[-22.73, -326.09,moveReactZ ? 80 : 21.23]} scale={[0.81, 0.35, 1]} 
+                     onClick={(e)=>Link(e,'react')}
+                     onPointerEnter={(e)=>{e.stopPropagation(),setMoveReactZ(v=>!v)}}
+                     onPointerOut={(e=>{e.stopPropagation(),setMoveReactZ(v=>!v)})} 
+              >
                 <mesh geometry={nodes.frame4.geometry} material={materials.frame} position={[0, 0, -17.53]} />
                 <mesh geometry={nodes.screen4.geometry} material={materials.reactIMG} position={[0, 0, 2.98]} scale={0.94} />
               </group>

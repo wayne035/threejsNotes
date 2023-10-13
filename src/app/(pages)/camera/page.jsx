@@ -23,7 +23,7 @@ export default function Camera(){
     const obj = useControls('正方體位置',value())
 
     return(
-      <div className='h-[100vh]'>
+      <div className='h-screen w-screen fixed'>
         <Canvas camera={{ position: [2, 3, 6] }}>
           <PerspectiveCamera ref={c}
              position={[camera.X, camera.Y, camera.Z]}

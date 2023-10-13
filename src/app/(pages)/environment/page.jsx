@@ -13,7 +13,7 @@ export default function Environments() {
   })
 
   return (
-    <div className='h-[100vh]'>
+    <div className='h-screen w-screen fixed'>
       <Canvas camera={{ position: [2, 2, 6] }}>
           <OrbitControls/>
           <Environment preset={e.BG} blur={e.blur} background/>

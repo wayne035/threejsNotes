@@ -12,7 +12,7 @@ export default function OrbitControl() {
   })
 
   return (
-    <div className='h-[100vh]'>
+    <div className='h-screen w-screen fixed'>
       <Canvas camera={{ position: [2, 2, 6] }}>
           <OrbitControls enablePan={o.Pan} enableRotate={o.Rotate} enableZoom={o.Zoom}/>
           <gridHelper />
